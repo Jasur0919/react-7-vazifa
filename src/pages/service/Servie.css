@@ -1,0 +1,42 @@
+.about_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 108px 0 128px 0;
+    
+}
+
+.about_text h1 {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 72px;
+    max-width: 618px;
+    color: #1D3444;
+}
+
+.about_text p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 510px;
+    margin: 24px 0;
+
+}
+
+.about_text button {
+    width: 171px;
+    height: 54px;
+    border-radius: 27px ;
+    background: #F58A07;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.about_text span {
+    color: #F58A07;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

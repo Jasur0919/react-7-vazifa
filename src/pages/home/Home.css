@@ -1,0 +1,110 @@
+.logo {
+    background: #DCEAF5 !important;
+}
+
+.logo_box {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 58px 0 20px 0;
+}
+
+.logo_text h1 {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 72px;
+    max-width: 576px;
+}
+
+.logo_text p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 571px;
+    margin: 12px 0 32px 0;
+}
+
+.logo_img-1{
+    width: 600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo_text-button {
+    display: flex;
+    /* align-items: center; */
+    gap: 40px;
+}
+
+.logo_text-button button {
+    width: 199px;
+    height: 54px;
+    border-radius: 27px;
+    background: #F58A07;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+
+.logo_par1 {
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+
+}
+
+
+
+/*  L A T E S T */
+
+.latest {
+    background: #DCEAF5;
+
+}
+
+.latest_box {
+    padding: 64px 0 90px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.latest_card{
+    background: white;
+    width: 400px;
+    height: 507px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.latest_card_text {
+    padding: 0 32px 32px 32px;
+}
+
+.latest_card h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    max-width: 336px;
+    margin-top: 32px;
+}
+
+.latest_card p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    max-width: 336px;
+    margin: 16px 0 24px 0;
+}
+
+.latest_card span {
+    color: #F58A07;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

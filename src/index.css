@@ -1,0 +1,144 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width:  1310px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* .navbar_routes {
+  opacity: 0;
+} */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-box {
+  display: flex;
+  gap: 40px !important;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 16px 0;
+}
+
+.navbar_links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar_links a:hover {
+  color: rgb(116, 112, 112);
+}
+
+.navbar_links button {
+  width: 173px;
+  height: 52px;
+  border-radius: 31px;
+  background: #dd7c061a;
+  color: #F58A07;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .2s linear;
+  font-size: 15px;
+}
+
+.navbar_links button:hover {
+  background: #7e48051a;
+  color: #fc9a22;
+  font-size: 17px;
+
+}
+
+
+/*  F O O T E R */
+
+.footer{
+  background: #063255;
+
+}
+
+.footer_box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 82px;
+}
+
+.footer_link {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;  
+}
+
+.footer_img1 {
+  width: 120px;
+  height: 24px;
+}
+
+.footer_link h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    max-width: 351px;
+    color: white;
+}
+
+.footer_link input {
+  width: 342px;
+  height: 54px;
+  border-radius: 31px;
+  background: white;
+  padding: 20px;
+}
+
+.footer_link input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+.footer_link button {
+  width: 156px;
+  height: 54px;
+  border-radius: 31px;
+  background: #F58A07;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+
+
+}
+
+
+
+
+.footer_bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+  padding: 80px 0;
+
+}
+
+.footer_bot-span {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
