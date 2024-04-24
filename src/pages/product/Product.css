@@ -1,65 +1,49 @@
-.logo {
-    background: #DCEAF5 !important;
-}
-
-.logo_box {
-    display: flex !important;
+.about_box {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 58px 0 20px 0;
+    margin: 108px 0 128px 0;
+    
 }
 
-.logo_text h1 {
+.about_text h1 {
     font-size: 64px;
     font-weight: 600;
     line-height: 72px;
-    max-width: 576px;
+    max-width: 618px;
+    color: #1D3444;
 }
 
-.logo_text p {
+.about_text p {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
-    max-width: 571px;
-    margin: 12px 0 32px 0;
+    max-width: 510px;
+    margin: 24px 0;
+
 }
 
-.logo_img-1{
-    max-width: 600px;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.logo_text-button {
-    display: flex;
-    /* align-items: center; */
-    gap: 40px;
-}
-
-.logo_text-button button {
-    width: 199px;
+.about_text button {
+    width: 171px;
     height: 54px;
-    border-radius: 27px;
+    border-radius: 27px ;
     background: #F58A07;
     color: white;
-    font-size: 16px;
-    font-weight: 600;
     border: none;
     outline: none;
 }
 
-.logo_par1 {
-    font-size: 18px;
-    font-weight: 400;
-    color: gray;
-
+.about_text span {
+    color: #F58A07;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 
 
-/*  L A T E S T */
+/*    L A T E S T   */
 
 .latest {
     background: #DCEAF5;
@@ -72,14 +56,33 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 27px;
+}
+
+.latest_h2 {
+    padding-top: 96px;
 }
 
 .latest_card{
     background: white;
     width: 400px;
-    height: 507px;
+    height: 437px;
     overflow: hidden;
     border-radius: 20px;
+    text-align: center;
+}
+
+
+.latest_card_img{
+    max-width: 270px;
+    height: 229px;
+    transition: .3s linear;
+    margin-top: 20px;
+}
+
+.latest_card_img:hover {
+    transform: scale(1.06);
+
 }
 
 .latest_card_text {
@@ -100,6 +103,14 @@
     line-height: 28px;
     max-width: 336px;
     margin: 16px 0 24px 0;
+   
+}
+
+.latest_card_text p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .latest_card span {
@@ -107,14 +118,4 @@
     display: flex;
     align-items: center;
     gap: 8px;
-}
-
-
-
-
-@media(max-width: 630px) {
-
-    .logo_img-1{
-        max-width: 500px;
-    }
 }
