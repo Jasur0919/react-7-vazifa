@@ -10,7 +10,8 @@ import Fensweet1 from './assets/footer-finsweet.svg'
 import Site from './assets/footer-site.svg'
 import Product from './pages/product/Product'
 import SingleRout from './pages/single-rout/SingleRout'
-import NoteFound from './pages/notFound/NoteFound'
+import AnimatedCursor from "react-animated-cursor"
+
 
 
 
@@ -35,6 +36,8 @@ function App() {
       </div>
 
     </section>
+
+    <AnimatedCursor />
   
      <div className='navbar_routes'>
      <Routes>
@@ -44,8 +47,7 @@ function App() {
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/service' element={<Service/>}/>
         <Route path='/product' element={<Product/>}/>
-        <Route path='/single-rout/:id' element={<SingleRout/>}/>
-        <Route path='*' element={<NoteFound/>}/>
+        <Route path='/products/:id' element={<SingleRout/>}/>
      </Routes>
      </div>
 

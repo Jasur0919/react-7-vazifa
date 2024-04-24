@@ -5,6 +5,7 @@ import Woman from '../../assets/service-ofice.svg'
 import LatestLeft from '../../assets/latest-left.svg'
 import All from '../../assets/service_balll.svg'
 import Latest1 from '../../assets/latest-1.svg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -24,9 +25,11 @@ const Product = () => {
     
     let links = data?.slice(0, 9).map((pr) => (
         <div key={pr.id} className="latest_card">
+            <Link to={`/products/${pr.id}`}>
                 <img src={pr.images[0]} alt="" className='latest_card_img' />
+            </Link>
                <div className="latest_card_text">
-               <h3 title='`${pr.title}1'>{pr.title}</h3>
+               <h3>{pr.title}</h3>
                 <p>{pr.description}</p>
                 <span>Learn More <img src={LatestLeft} alt="" /></span>
                </div>
