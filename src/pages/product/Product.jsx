@@ -4,7 +4,7 @@ import axios from 'axios'
 import Woman from '../../assets/service-ofice.svg'
 import LatestLeft from '../../assets/latest-left.svg'
 import All from '../../assets/service_balll.svg'
-import Latest1 from '../../assets/latest-1.svg'
+// import Latest1 from '../../assets/latest-1.svg'
 import { Link } from 'react-router-dom'
 
 

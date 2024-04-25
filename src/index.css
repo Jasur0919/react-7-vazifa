@@ -6,6 +6,10 @@
   font-family: sans-serif;
 }
 
+body {
+  cursor: default !important;
+}
+
 .container {
   max-width:  1310px;
   margin: 0 auto;

@@ -37,7 +37,7 @@ function App() {
 
     </section>
 
-    <AnimatedCursor />
+    <AnimatedCursor innerStyle={{display: "none", color: "12, 66, 150"}}/>
   
      <div className='navbar_routes'>
      <Routes>
