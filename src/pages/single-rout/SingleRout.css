@@ -1,0 +1,22 @@
+
+.single_cards {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.single_image_appearances{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.single_image_appearances img{
+    width: 150px;
+    height: 150px;
+}
+
+.single_image img{
+    max-width: 550px;
+    height: 517px;
+}
