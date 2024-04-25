@@ -8,37 +8,33 @@ import { useParams } from "react-router-dom"
 const SingleRout = () => {
     const {id} = useParams()
 
+
 const [path, setPath] = useState(null)
     
     useEffect(() => {
         axios
             .get(`https://dummyjson.com/products/${id}`)
-            .then(res => setPath(res.data))
+            .then(res => {setPath(res.data), console.log(res.data)})
             .catch(err => console.log(err))
-    }, [id])
-    console.log(path);
+    }, [])
     
     
-//    let link = path?.slice(0, 3).map((element, index) => (
-//     <div key={index} className="single_image_appearances">
-//                    <img  src={element.images} alt="" />
-//                    <img  src={element.images} alt="" />
-//                    <img  src={element.images} alt="" />
-//     </div>
-//    ))
+
 
   return (
     
     <div>
         
-        <div className="container">
+        <div className="mobile">
+
+        <div className="container ">
             <div className="single_cards">
 
                 <div className="single_image_appearances">
 
                     {
                         path?.images?.slice(0, 3).map((element, index) => (
-                            <div key={index} className="ll">
+                            <div key={index} className="s">
                                         <img  src={element} />
                             </div>
                         ))
@@ -51,14 +47,26 @@ const [path, setPath] = useState(null)
                 </div> */}
 
                 <div className="single_image">
-                  
-                         <img  src={path.images[0]} alt="" />   
-                     </div>
+                         <img src={path?.images[0]} alt="" />   
 
+                 </div>
+
+                <div className="single_text">
+                    
+                        <h1> {path?.title}</h1>
+                        <p>{path?.description}</p>
+                        <h2 className="price-h2">{`${path?.price} $`} <h3 className="h3">Arzon narxda olib qoling</h3></h2>
+                        <h2 className="h2" >{path?.brand} <img className="brand-link" src={path?.images[0]} alt="" /></h2>
+                        <h3>{path?.category}</h3>
+                    
+                </div>
+
+        
             </div> 
 
 
 
+        </div>
         </div>
         
 
